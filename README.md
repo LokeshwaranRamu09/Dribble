@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:2/1/25
+## Date:3/1/25
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -28,82 +28,114 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 
 ```
-<html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<body>
 
-<body
-    style="background-image: url(download\ \(2\).gif); max-height: 100hv;width: 100%; background-repeat: no-repeat; background-size: 100%;">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-warning ">
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="https://www.google.co.in/" title="google.com "
-                style="font-family: fantasy;">Dribble Website</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dribbble Clone</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse  " id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#">Shots</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign In</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br><br><br>
-    <div class="container-fluid  " style="text-align: center;">
-        <h1 class=" align-middle display-1 text-dark"><br> <b>FUTURISTIC AND REALISTIC WORLD  <br> </b> THE MOST ADVANCED TECHS</h1><br>
-        <button type="button" class="btn btn-success btn-lg" href="service.html">LOG IN</button> <br>
-        <br>
-        <p class="text-secondary"> <b></b></p>
-    </div>
-    <div class="container-fluid bg-danger">
-        <div class="d-flex justify-content-center mt-5 pt-5">
-            <div class="col-lg-3">
-                <img src="project101.jpg" alt="this is first background-image" class="img-thumbnail w-75 h-75 rounded">
-            </div>
-            <div class="col-lg-3">
-                <img src="project102.jpg" alt="this is first background-image" class="img-thumbnail w-75 h-75 rounded">
-            </div>
-            <div class="col-lg-3">
-                <img src="project103.jpg" alt="this is first background-image" class="img-thumbnail w-75 h-75 rounded ">
-            </div>
-            <div class="col-lg-3">
-                <img src="project104.jpeg" alt="this is first background-image" class="img-thumbnail w-75 h-75 rounded ">
+
+    <!-- Hero Section -->
+    <section class="bg-info text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Dribbble Clone</h1>
+            <p class="lead">Showcasing stunning designs, illustrations, and digital art from talented creators.</p>
+            <a href="#" class="btn btn-light btn-lg">Explore Web Shots</a>
+        </div>
+    </section>
+
+    <!-- Featured Shots Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 text-dark">Featured Shots</h2>
+            <p class="lead mb-4 text-muted">Discover some of the best creative shots .</p>
+            <div class="row">
+                <!-- Shot 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light">
+                        <img src="pro1.jpeg" class="card-img-top" alt="Shot 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Shot Title 1</h5>
+                            <p class="card-text text-muted">A short description of the design.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shot 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light">
+                        <img src="pro2.jpeg" class="card-img-top" alt="Shot 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Shot Title 2</h5>
+                            <p class="card-text text-muted">A short description of the design and web page.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shot 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light">
+                        <img src="pro3.png" class="card-img-top" alt="Shot 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Shot Title 3</h5>
+                            <p class="card-text text-muted">A short description of the design.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <footer class="bg-dark text-light text-center py-3">
-        <div class="container">
-            <h1>&copy; Designed and develeped by R.LOKESHWARAN</h1>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <p class="mb-0">&copy;Developed by R.Lokeshwran</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
+
+
 
 ```
 ## OUTPUT:
-![Screenshot (105)](https://github.com/user-attachments/assets/93d49a6a-18c3-4197-97ba-2102a17666ae)
+![Screenshot (106)](https://github.com/user-attachments/assets/c5e6730a-82b3-425e-8655-f1b848704947)
+
 
 
 ## RESULT:
